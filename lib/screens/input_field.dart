@@ -59,7 +59,9 @@ class InputFieldScreen extends StatelessWidget {
                   width: double.infinity,
                   child: ElevatedButton(
                     onPressed: () {
-                      print(myForm);
+                      FocusScope.of(context).requestFocus(FocusNode());
+                      //print(myForm);
+                      //formKey.currentState!.validate();
                     },
                     child: Text('Enviar'),
                   ),
